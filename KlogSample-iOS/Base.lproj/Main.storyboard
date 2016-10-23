@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Klog_iOS_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="File Log" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqX-nv-OTy">
+                                <state key="normal" title="Send log"/>
+                                <connections>
+                                    <action selector="onPushSendLog:" destination="9pv-A4-QxB" eventType="touchUpInside" id="8Qm-fb-9hC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nj5-Qw-7Yn">
+                                <state key="normal" title="Clear log"/>
+                                <connections>
+                                    <action selector="onPushClearLog:" destination="9pv-A4-QxB" eventType="touchUpInside" id="YCd-P6-3yQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCh-nD-YTc">
+                                <state key="normal" title="Remove log"/>
+                                <connections>
+                                    <action selector="onPushRemoveLog:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Iuy-eI-9MG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDT-P6-ich">
+                                <state key="normal" title="Debug"/>
+                                <connections>
+                                    <action selector="onPushDebug:" destination="9pv-A4-QxB" eventType="touchUpInside" id="KJm-A1-jHv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfx-Cn-xkK">
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <action selector="onPushInfo:" destination="9pv-A4-QxB" eventType="touchUpInside" id="plJ-wE-mkC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F0-gG-3OL">
+                                <state key="normal" title="Warn"/>
+                                <connections>
+                                    <action selector="onPushWarn:" destination="9pv-A4-QxB" eventType="touchUpInside" id="dLX-kc-B3x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAS-Fa-I5Q">
+                                <state key="normal" title="Error"/>
+                                <connections>
+                                    <action selector="onPushError:" destination="9pv-A4-QxB" eventType="touchUpInside" id="RSx-If-MHi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8X0-EZ-ZNt">
+                                <state key="normal" title="Fault"/>
+                                <connections>
+                                    <action selector="onPushFault:" destination="9pv-A4-QxB" eventType="touchUpInside" id="jpd-3F-lVc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwi-kp-KDg">
+                                <state key="normal" title="Util"/>
+                                <connections>
+                                    <action selector="onPushUtil:" destination="9pv-A4-QxB" eventType="touchUpInside" id="t99-04-CXA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmB-lH-1RE">
+                                <state key="normal" title="Stop system check"/>
+                                <connections>
+                                    <action selector="onStopSystemCheck:" destination="9pv-A4-QxB" eventType="touchUpInside" id="0w4-wT-XTI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbe-T6-Z6c">
+                                <state key="normal" title="Start system check"/>
+                                <connections>
+                                    <action selector="onStartSystemCheck:" destination="9pv-A4-QxB" eventType="touchUpInside" id="GvA-75-bfa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cmB-lH-1RE" firstAttribute="top" secondItem="Bbe-T6-Z6c" secondAttribute="bottom" constant="8" id="3WS-oT-aW5"/>
+                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="wwi-kp-KDg" firstAttribute="top" secondItem="DDT-P6-ich" secondAttribute="bottom" constant="8" id="6DN-re-6WR"/>
+                            <constraint firstItem="6F0-gG-3OL" firstAttribute="top" secondItem="IAS-Fa-I5Q" secondAttribute="bottom" constant="8" id="7C4-Xa-umj"/>
+                            <constraint firstItem="cmB-lH-1RE" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="BZP-hT-qbE"/>
+                            <constraint firstItem="nCh-nD-YTc" firstAttribute="top" secondItem="Nj5-Qw-7Yn" secondAttribute="bottom" constant="8" id="DSW-BQ-AJy"/>
+                            <constraint firstItem="Nj5-Qw-7Yn" firstAttribute="top" secondItem="RqX-nv-OTy" secondAttribute="bottom" constant="8" id="F5x-Hr-6Km"/>
+                            <constraint firstItem="8X0-EZ-ZNt" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="K7o-ZO-nfQ"/>
+                            <constraint firstItem="RqX-nv-OTy" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="MOn-oZ-kOT"/>
+                            <constraint firstItem="DDT-P6-ich" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="OLe-6p-7N9"/>
+                            <constraint firstItem="wwi-kp-KDg" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Q6B-Vj-jU4"/>
+                            <constraint firstItem="IAS-Fa-I5Q" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Rc6-pn-pBO"/>
+                            <constraint firstItem="Nj5-Qw-7Yn" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="XoR-s5-4gm"/>
+                            <constraint firstItem="Bbe-T6-Z6c" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="aNg-P4-tkW"/>
+                            <constraint firstItem="zfx-Cn-xkK" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="aYO-oG-DEi"/>
+                            <constraint firstItem="6F0-gG-3OL" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="bWz-cr-tcm"/>
+                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="nCh-nD-YTc" secondAttribute="bottom" constant="8" id="grJ-Qt-XuK"/>
+                            <constraint firstItem="nCh-nD-YTc" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="hjz-aj-DP6"/>
+                            <constraint firstItem="RqX-nv-OTy" firstAttribute="top" secondItem="cmB-lH-1RE" secondAttribute="bottom" constant="8" id="oaa-jr-Tuo"/>
+                            <constraint firstItem="8X0-EZ-ZNt" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="tww-cs-DKQ"/>
+                            <constraint firstItem="DDT-P6-ich" firstAttribute="top" secondItem="zfx-Cn-xkK" secondAttribute="bottom" constant="8" id="uSr-wt-DYe"/>
+                            <constraint firstItem="IAS-Fa-I5Q" firstAttribute="top" secondItem="8X0-EZ-ZNt" secondAttribute="bottom" constant="8" id="y88-lH-Qrg"/>
+                            <constraint firstItem="zfx-Cn-xkK" firstAttribute="top" secondItem="6F0-gG-3OL" secondAttribute="bottom" constant="8" id="yRB-Hq-CRq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Klog_iOS_Tests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaN-ct-6Sh">
+                                <state key="normal" title="Show log"/>
+                                <connections>
+                                    <action selector="onPushShowLogs:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8pu-rQ-zUr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="VaN-ct-6Sh" secondAttribute="bottom" constant="8" id="HUI-7G-TdC"/>
+                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="VaN-ct-6Sh" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="O2e-nC-bkM"/>
+                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
+                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
